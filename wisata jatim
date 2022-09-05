@@ -1,0 +1,41 @@
+import java.util.Scanner;
+
+/**
+ *
+ * @author audre
+ */
+public class tugasrpl {
+    public static void main(String[] args) {
+        Scanner input= new Scanner (System.in);
+        int wisata, harga=0, uang;
+       
+        
+        System.out.println("pilihlah wisata sesuai angka: ");
+        System.out.println("1. jatimpark 2");
+        System.out.println("2. candi borobudur");
+        System.out.println("3. candi singosari");
+        wisata= input.nextInt();
+       
+        
+        switch (wisata) {
+            case 1:
+                System.out.println("harga jatimpark 2 yaitu rp.120.000"); harga = 120000;
+            break;
+            case 2:
+                System.out.println("harga candi borobudur yaitu rp.150.000"); harga = 150000;
+            break;
+            case 3:
+                System.out.println("harga candi singosari yaitu rp.10.000"); harga = 10000;
+            break;  
+        }
+        System.out.println("masukkan uang anda: ");
+        uang= input.nextInt();
+        if (uang>harga) {
+            System.out.println("uang kembalian anda: "+ (uang-harga));
+        } else {
+            System.out.println("mohon maaf uang anda kurang");
+        }
+        
+        
+    }
+}
